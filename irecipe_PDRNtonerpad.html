@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1200, initial-scale=1.0" />
+  <title>Qoo10 상품페이지 검토 - 1147997508</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f3f5f7;
+      color: #1f2937;
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 36px 32px 60px;
+    }
+    .page {
+      background: #fff;
+      border-radius: 22px;
+      box-shadow: 0 12px 34px rgba(15, 23, 42, 0.08);
+      padding: 34px;
+      margin-bottom: 26px;
+      page-break-after: always;
+    }
+    .page:last-child { page-break-after: auto; }
+    h1, h2, h3 { margin: 0; }
+    .title {
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+    .submeta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      background: #eef2ff;
+      color: #3730a3;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 20px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+      background: #fff;
+    }
+    .soft {
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    }
+    .highlight {
+      background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+      border: 1px solid #dbeafe;
+    }
+    .danger {
+      background: linear-gradient(135deg, #fff7ed 0%, #fff1f2 100%);
+      border: 1px solid #fed7aa;
+    }
+    .success {
+      background: linear-gradient(135deg, #ecfeff 0%, #f0fdf4 100%);
+      border: 1px solid #bbf7d0;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 14px;
+      color: #111827;
+    }
+    .small-title {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+    p { margin: 0; }
+    .big {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .muted { color: #6b7280; }
+    ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+    li { margin-bottom: 6px; }
+    .metric {
+      padding: 18px;
+      border-radius: 18px;
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+    }
+    .metric .label {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+    .metric .value {
+      font-size: 28px;
+      font-weight: 800;
+      color: #111827;
+      line-height: 1.2;
+    }
+    .metric .desc {
+      font-size: 13px;
+      color: #475569;
+      margin-top: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 12px 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      background: #f8fafc;
+      font-weight: 800;
+      color: #111827;
+    }
+    .rank {
+      display: inline-flex;
+      width: 28px;
+      height: 28px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #111827;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      margin-right: 8px;
+    }
+    .callout {
+      border-left: 5px solid #6366f1;
+      padding: 14px 16px;
+      background: #f8faff;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .footer-note {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 16px;
+    }
+    .jp-box {
+      background: #0f172a;
+      color: #fff;
+      border-radius: 18px;
+      padding: 18px;
+    }
+    .jp-box .jp-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #c7d2fe;
+      margin-bottom: 8px;
+    }
+    .jp-box .jp-copy {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.45;
+      letter-spacing: -0.2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <section class="page">
+      <h1 class="title">Qoo10 상품페이지 검토 보고서</h1>
+      <div class="submeta">
+        <div class="chip">대상 상품: 1147997508</div>
+        <div class="chip">카테고리: PDRN 토너패드</div>
+        <div class="chip">형식: 1200px 고정형 단독실행 HTML</div>
+      </div>
+
+      <div class="grid-4" style="margin-bottom:20px;">
+        <div class="metric">
+          <div class="label">현재 판매가</div>
+          <div class="value">¥2,600</div>
+          <div class="desc">단품 대표 SKU 기준</div>
+        </div>
+        <div class="metric">
+          <div class="label">리뷰 수</div>
+          <div class="value">594</div>
+          <div class="desc">자사 내 대표 노출 SKU로 활용 가능</div>
+        </div>
+        <div class="metric">
+          <div class="label">현재 포지션</div>
+          <div class="value" style="font-size:24px;">跡ケア 패드</div>
+          <div class="desc">PDRN·시카·진정·보습 복합 포지션</div>
+        </div>
+        <div class="metric">
+          <div class="label">핵심 과제</div>
+          <div class="value" style="font-size:24px;">전환 언어 정리</div>
+          <div class="desc">무엇인지보다 왜 사야 하는지 강화</div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card soft">
+          <div class="section-title">한 줄 진단</div>
+          <p class="big">상품 방향은 잘 잡혀 있지만, 현재 페이지는 기능 키워드를 많이 나열하는 구조라서 <span style="color:#4338ca;">고객이 기억할 대표 메시지 한 줄</span>이 약합니다.</p>
+          <ul>
+            <li>PDRN, 시카, 피부장벽, 보습, 흔적케어, 모공 등 정보량은 충분함</li>
+            <li>반면 클릭과 전환을 만드는 핵심 문구는 분산되어 있음</li>
+            <li>이 상품은 강한 각질패드보다 <b>진정·쿨링·밀착·보습형 패드</b>로 읽히는 편</li>
+          </ul>
+        </div>
+        <div class="card highlight">
+          <div class="section-title">이번 상품의 핵심 승부 포인트</div>
+          <ul>
+            <li><b>肌荒れ跡</b>이 신경 쓰이는 고객에게 직접 꽂히는 카피</li>
+            <li>닦토보다 <b>부분팩/쿨링/아침 피부정돈</b> 사용 장면 강조</li>
+            <li>리뷰 기반 강점인 <b>부드러움·두께감·늘어남·쿨링감</b> 전면화</li>
+            <li>치료 느낌보다 <b>민감 피부도 쓰기 쉬운 데일리 케어</b> 톤 유지</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-title">1. 현재 페이지 문제점과 개선 방향</div>
+      <div class="grid-3">
+        <div class="card danger">
+          <div class="small-title">문제 1. 기능 키워드가 너무 많다</div>
+          <p>현재 상품명은 장점이 많다는 인상은 주지만, 첫 1초 안에 무엇을 기억해야 하는지가 분명하지 않습니다. 고객은 긴 키워드 나열보다 대표 효익 한 줄을 먼저 기억합니다.</p>
+        </div>
+        <div class="card danger">
+          <div class="small-title">문제 2. 제품 사용 상황이 선명하지 않다</div>
+          <p>토너패드이긴 하지만 닦토용인지, 진정팩용인지, 메이크업 전 정돈용인지가 첫 화면에서 명확히 정리되어야 전환력이 높아집니다.</p>
+        </div>
+        <div class="card danger">
+          <div class="small-title">문제 3. 리뷰 강점이 카피로 승격되지 않았다</div>
+          <p>실사용자 반응에서 보이는 부드러움, 두께감, 밀착력, 쿨링감이 페이지 핵심 카피로 크게 살아나지 않으면 경쟁 제품과 차별이 약해집니다.</p>
+        </div>
+      </div>
+
+      <div class="card success" style="margin-top:18px;">
+        <div class="section-title">개선 방향 요약</div>
+        <div class="callout">이 상품은 “강하게 닦아내는 패드”가 아니라 “예민하고 흔적이 신경 쓰일 때 손이 가는 진정·밀착 PDRN 패드”로 포지셔닝하는 것이 맞습니다.</div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-title">2. 상품명 개선안</div>
+      <div class="card soft" style="margin-bottom:18px;">
+        <div class="small-title">현재 방향</div>
+        <p>현재 제목은 장점이 많지만, 키워드가 길게 이어져 대표 메시지 집중도가 떨어집니다. 따라서 <b>제품 타입 → 핵심 효익 → 차별 포인트</b> 순으로 재정렬하는 것이 좋습니다.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card highlight">
+          <div class="small-title"><span class="rank">1</span>추천안 A</div>
+          <p><b>【公式】シカPDRN トナーパッド 70枚 / 肌荒れ・跡ケア / ひんやり密着 / うるおい肌バリア</b></p>
+          <ul>
+            <li>제품 타입 인지가 빠름</li>
+            <li>跡ケア와 밀착감이 동시에 보임</li>
+            <li>전환형 키워드 중심</li>
+          </ul>
+        </div>
+        <div class="card highlight">
+          <div class="small-title"><span class="rank">2</span>추천안 B</div>
+          <p><b>【公式】シカPDRN 跡ケア トナーパッド 70枚 / 角質・肌荒れケア / 敏感肌 / 5種ヒアルロン酸</b></p>
+          <ul>
+            <li>흔적 고민형 고객에게 직관적</li>
+            <li>성분 근거도 함께 제시</li>
+            <li>민감 피부 톤에 적합</li>
+          </ul>
+        </div>
+        <div class="card highlight">
+          <div class="small-title"><span class="rank">3</span>추천안 C</div>
+          <p><b>【公式】シカPDRN クリア トナーパッド 70枚 / ニキビ跡・乾燥ケア / 伸びる密着パッド</b></p>
+          <ul>
+            <li>사용감 차별 포인트가 분명함</li>
+            <li>늘어나는 패드 특징 반영</li>
+            <li>썸네일 카피와 연동하기 쉬움</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <div class="small-title">정리 포인트</div>
+        <ul>
+          <li><b>クレーター跡緩和</b>, <b>色素沈着緩和</b> 같은 무거운 표현은 앞단보다 뒷단 보조 키워드로 두는 편이 안전함</li>
+          <li>검색성과 전환을 동시에 잡으려면 <b>跡ケア / 肌荒れ / ひんやり / 密着 / 敏感肌</b> 중심 조합이 좋음</li>
+          <li>대표 제목은 짧고 선명하게, 상세페이지 안에서 기능을 확장 설명하는 구조가 효율적임</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-title">3. 썸네일 개선 방향</div>
+      <div class="grid-2">
+        <div class="card soft">
+          <div class="small-title">썸네일 전략</div>
+          <p>이번 상품은 성분 정보보다 <b>고객이 써야 하는 순간</b>을 먼저 보여주는 것이 좋습니다. 리뷰상 강점이 쿨링, 밀착, 아침 피부 정돈, 민감 피부 사용성 쪽에 있기 때문입니다.</p>
+          <ul>
+            <li>한 장에 메시지 1개만 크게</li>
+            <li>PDRN 설명보다 사용 장면 먼저</li>
+            <li>보습/진정보다 <b>肌荒れ跡 + ひんやり密着</b> 조합 우선</li>
+          </ul>
+        </div>
+        <div class="jp-box">
+          <div class="jp-title">메인 썸네일용 대표 카피</div>
+          <div class="jp-copy">肌荒れ跡に<br>ひんやり密着</div>
+        </div>
+      </div>
+
+      <div class="grid-4" style="margin-top:18px;">
+        <div class="card highlight">
+          <div class="small-title">썸네일 카피 1</div>
+          <p><b>肌荒れ跡に ひんやり密着</b></p>
+        </div>
+        <div class="card highlight">
+          <div class="small-title">썸네일 카피 2</div>
+          <p><b>朝の肌を 3分で整える</b></p>
+        </div>
+        <div class="card highlight">
+          <div class="small-title">썸네일 카피 3</div>
+          <p><b>敏感肌でも使いやすい PDRNパッド</b></p>
+        </div>
+        <div class="card highlight">
+          <div class="small-title">썸네일 카피 4</div>
+          <p><b>うるおい補給＋拭き取りケア</b></p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <div class="small-title">디자인 가이드</div>
+        <ul>
+          <li>메인 썸네일은 제품 컷 + 핵심 카피 1개만 남기고 정보량을 줄일 것</li>
+          <li>성분 배지, 장점 배지, 할인 배지, 증정 배지가 동시에 많으면 집중도가 떨어짐</li>
+          <li>서브 썸네일에서 순서대로 <b>사용 장면 → 패드 질감 → 성분 → 리뷰 포인트</b> 구조를 권장</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-title">4. 상세페이지 상단 구성안</div>
+      <div class="grid-2">
+        <div class="card success">
+          <div class="small-title">권장 헤드라인</div>
+          <p class="big">肌荒れ跡が気になる日に、<br>ひんやり密着PDRNパッド</p>
+        </div>
+        <div class="card success">
+          <div class="small-title">권장 서브카피</div>
+          <p class="big">拭き取り・部分パック・クーリングまで1枚で<br>敏感になった肌をやさしく整える</p>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:18px;">
+        <div class="card soft">
+          <div class="small-title">핵심 포인트 1</div>
+          <p><b>ひんやりクールダウン</b><br>열감과 예민함이 올라온 피부를 빠르게 진정시키는 인상을 전달</p>
+        </div>
+        <div class="card soft">
+          <div class="small-title">핵심 포인트 2</div>
+          <p><b>やわらかく伸びる密着パッド</b><br>패드 재질 차별점이 직접적으로 보이게 구성</p>
+        </div>
+        <div class="card soft">
+          <div class="small-title">핵심 포인트 3</div>
+          <p><b>うるおい肌バリアケア</b><br>각질 제거만 하는 패드가 아니라는 점을 강조</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <div class="small-title">추천 상세페이지 흐름</div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:120px;">구간</th>
+              <th style="width:260px;">보여줄 내용</th>
+              <th>목적</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1구간</td>
+              <td>헤드라인 + 사용 장면</td>
+              <td>누가 왜 써야 하는지 즉시 이해시키기</td>
+            </tr>
+            <tr>
+              <td>2구간</td>
+              <td>쿨링 / 밀착 / 보습 3포인트</td>
+              <td>경쟁 패드와 차별되는 사용감 강조</td>
+            </tr>
+            <tr>
+              <td>3구간</td>
+              <td>낮은 자극감 + 민감 피부 사용성</td>
+              <td>구매 허들을 낮추기</td>
+            </tr>
+            <tr>
+              <td>4구간</td>
+              <td>PDRN·시카·히알루론산 성분 설명</td>
+              <td>기능 설득력 보완</td>
+            </tr>
+            <tr>
+              <td>5구간</td>
+              <td>리뷰 기반 실사용 포인트 정리</td>
+              <td>실제 만족 포인트를 전환 언어로 연결</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-title">5. 리뷰 기반 강점 정리</div>
+      <div class="grid-2">
+        <div class="card highlight">
+          <div class="small-title">리뷰에서 반복적으로 읽히는 장점</div>
+          <ul>
+            <li>패드가 <b>부드럽고 두툼하다</b></li>
+            <li>패드가 <b>잘 늘어나 밀착된다</b></li>
+            <li><b>쿨링감</b>이 있어 아침이나 열감 있는 피부에 좋다</li>
+            <li><b>보습감</b>이 괜찮아 단순 닦토보다 만족도가 높다</li>
+            <li>민감 피부도 비교적 편하게 쓰는 편이라는 인상이 있다</li>
+          </ul>
+        </div>
+        <div class="card danger">
+          <div class="small-title">주의해서 다뤄야 할 포인트</div>
+          <ul>
+            <li>향에 대한 호불호 가능성</li>
+            <li>겨울보다는 여름철 만족도가 더 높을 수 있음</li>
+            <li>강한 각질 제거 기대 고객에겐 다소 약하게 느껴질 수 있음</li>
+            <li>케이스/뚜껑 관련 불편 언급이 있다면 보완 커뮤니케이션 필요</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <div class="small-title">리뷰 강점을 바로 카피화한 문구</div>
+        <div class="grid-4">
+          <div class="metric">
+            <div class="value" style="font-size:20px;">やわらか密着</div>
+            <div class="desc">부드러운 재질 차별화</div>
+          </div>
+          <div class="metric">
+            <div class="value" style="font-size:20px;">ひんやり整肌</div>
+            <div class="desc">쿨링 포인트 부각</div>
+          </div>
+          <div class="metric">
+            <div class="value" style="font-size:20px;">うるおい補給</div>
+            <div class="desc">닦토보다 보습형</div>
+          </div>
+          <div class="metric">
+            <div class="value" style="font-size:20px;">敏感肌にも</div>
+            <div class="desc">저자극 톤 유지</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-title">6. 경쟁 제품 대비 포지셔닝</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:180px;">비교군</th>
+            <th style="width:280px;">경쟁 포지션</th>
+            <th>우리 상품이 가져가야 할 포지션</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>VT류 PDRN/패드</td>
+            <td>탄력·범용 패드, 브랜드 인지도 강점</td>
+            <td><b>민감 피부 진정 + 흔적 케어</b> 중심으로 차별</td>
+          </tr>
+          <tr>
+            <td>리쥬란 계열</td>
+            <td>프리미엄·고가 이미지, 재생 이미지 강함</td>
+            <td><b>데일리 사용 가능한 가성비 흔적 케어 패드</b></td>
+          </tr>
+          <tr>
+            <td>일반 각질패드</td>
+            <td>강한 필링, 닦토형 포지션</td>
+            <td><b>쿨링·밀착·보습·부분팩</b> 이미지로 구분</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="card success" style="margin-top:18px;">
+        <div class="small-title">최종 포지셔닝 문장</div>
+        <p class="big">이 상품은 “빡세게 닦아내는 패드”가 아니라, <span style="color:#0f766e;">예민하고 흔적이 신경 쓰일 때 손이 가는 진정·밀착 PDRN 패드</span>로 세우는 것이 가장 적합합니다.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="section-title">7. 우선 실행안</div>
+      <div class="grid-3">
+        <div class="card highlight">
+          <div class="small-title"><span class="rank">1</span>상품명 정리</div>
+          <p>장점 나열형 제목을 줄이고 <b>跡ケア / 密着 / ひんやり / 敏感肌</b> 중심으로 재구성합니다.</p>
+        </div>
+        <div class="card highlight">
+          <div class="small-title"><span class="rank">2</span>메인 썸네일 재설계</div>
+          <p>제품 컷 + 대표 카피 1개만 남기고, 성분/배지/혜택 정보는 서브 썸네일로 이동합니다.</p>
+        </div>
+        <div class="card highlight">
+          <div class="small-title"><span class="rank">3</span>상세 첫 화면 재작성</div>
+          <p>성분보다 먼저 <b>누가 왜 쓰는지</b>를 사용 장면 중심으로 설계합니다.</p>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:16px;">
+        <div class="card soft">
+          <div class="small-title"><span class="rank">4</span>리뷰 표현 차용</div>
+          <p>부드러움, 두께감, 늘어남, 쿨링감을 상세카피에 직접 반영합니다.</p>
+        </div>
+        <div class="card soft">
+          <div class="small-title"><span class="rank">5</span>톤 조절</div>
+          <p>치료 이미지보다는 <b>민감 피부를 편하게 정돈하는 데일리 케어</b> 톤으로 안정화합니다.</p>
+        </div>
+        <div class="card soft">
+          <div class="small-title"><span class="rank">6</span>대표 SKU 집중</div>
+          <p>자사 내 리뷰 강한 단품 SKU를 기준으로 광고·썸네일·리뷰 유입을 집중합니다.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <div class="section-title">바로 사용 가능한 일본어 카피</div>
+        <table>
+          <thead>
+            <tr>
+              <th style="width:240px;">용도</th>
+              <th>카피</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>메인 카피</td>
+              <td><b>肌荒れ跡が気になる日に、ひんやり密着PDRNパッド</b></td>
+            </tr>
+            <tr>
+              <td>보조 카피 1</td>
+              <td><b>拭き取り・部分パック・クーリングまで1枚で</b></td>
+            </tr>
+            <tr>
+              <td>보조 카피 2</td>
+              <td><b>やわらかく伸びるパッドで、気になる部分にぴたっと密着</b></td>
+            </tr>
+            <tr>
+              <td>보조 카피 3</td>
+              <td><b>敏感になった肌をやさしく整える、うるおい跡ケア</b></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="footer-note">본 문서는 내부 검토 및 제안용 정리본입니다.</div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
